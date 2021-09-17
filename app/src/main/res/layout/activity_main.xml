@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,32 +10,35 @@
 
     <TextView
         android:id="@+id/user_name"
-        android:text="@string/name"
-        style="@style/user_name"/>
+        style="@style/user_name"
+        android:text="@string/name" />
 
     <LinearLayout
         android:id="@+id/stars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="40dp">
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/star1"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:srcCompat="@android:drawable/btn_star_big_on" />
+
         <ImageView
             android:id="@+id/star2"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:srcCompat="@android:drawable/btn_star_big_on" />
+
         <ImageView
             android:id="@+id/star3"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:srcCompat="@android:drawable/btn_star_big_on" />
     </LinearLayout>
 
